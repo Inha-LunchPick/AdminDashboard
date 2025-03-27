@@ -47,9 +47,9 @@ export const useAPI = () => {
       }
 
       // 개발 환경에서는 API URL에 접두사 추가
-      const apiUrl = import.meta.env.DEV
-        ? `http://localhost:3000${endpoint}`
-        : `https://api.inhalunchpick.com${endpoint}`;
+      // const apiUrl = import.meta.env.DEV
+      //   ? `http://localhost:3000${endpoint}`
+      //   : `https://api.inhalunchpick.com${endpoint}`;
 
       // 실제 API 호출
       // const response = await fetch(apiUrl, options);
@@ -361,7 +361,7 @@ function mockBotSettingsAPI(endpoint: string, method: APIMethod, data: any = nul
 }
 
 // 대시보드 API 모의 구현
-function mockDashboardAPI(endpoint: string, method: APIMethod, data: any = null) {
+function mockDashboardAPI(endpoint: string, method: APIMethod, _data: any = null) {
   const mockDashboardData = {
     statistics: {
       totalRestaurants: 27,

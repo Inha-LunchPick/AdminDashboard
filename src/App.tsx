@@ -36,7 +36,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
       
       <div className="flex flex-col flex-1 w-0 overflow-hidden md:ml-64">
-        <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        <Header setSidebarOpen={setSidebarOpen} />
         
         <main className="relative flex-1 overflow-y-auto focus:outline-none">
           <div className="py-6 px-4 sm:px-6 lg:px-8">

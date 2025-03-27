@@ -1,6 +1,5 @@
 // contexts/AuthContext.tsx
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { Auth } from 'aws-amplify';
 
 interface AuthContextType {
   user: any;

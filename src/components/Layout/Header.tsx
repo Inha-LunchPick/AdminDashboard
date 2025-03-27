@@ -9,7 +9,6 @@ import {
 import { useAuth } from '../../contexts/AuthContext';
 
 interface HeaderProps {
-  sidebarOpen: boolean;
   setSidebarOpen: (value: boolean) => void;
 }
 
@@ -17,7 +16,7 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 
-const Header = ({ sidebarOpen, setSidebarOpen }: HeaderProps) => {
+const Header = ({ setSidebarOpen }: HeaderProps) => {
   const { logout } = useAuth();
 
   return (
