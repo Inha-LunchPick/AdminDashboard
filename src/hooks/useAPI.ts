@@ -361,7 +361,7 @@ function mockBotSettingsAPI(endpoint: string, method: APIMethod, data: any = nul
 }
 
 // 대시보드 API 모의 구현
-function mockDashboardAPI(endpoint: string, method: APIMethod, _data: any = null) {
+function mockDashboardAPI(_endpoint: string, method: APIMethod, _data: any = null) {
   const mockDashboardData = {
     statistics: {
       totalRestaurants: 27,
